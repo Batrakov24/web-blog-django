@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e7d96d;
+}
+
+.header {
+    background-color: #e20808;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Фиксируем шапку в верхней части экрана */
+    top: 0; /* Прикрепляем к верхней части */
+    left: 0; /* Прикрепляем к левому краю */
+    z-index: 1000; /* Обеспечиваем, что шапка будет над остальным контентом */
+}
+
+.container {
+    display: flex;
+    max-width: 100%; /* Изменяем на 100% */
+    margin: 80px 0 20px; /* Отступ сверху для контента */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 20%; /* Ширина боковой панели 20% */
+    background-color: #4d545b;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #495057;
+}
+
+.content {
+    flex: 1; /* Контент занимает оставшееся пространство */
+    padding: 20px;
+    background-color: white;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+}
